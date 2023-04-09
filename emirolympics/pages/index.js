@@ -26,14 +26,16 @@ export default function Home(props) {
   const images = props.images;
   return (
     <>
-    <div class=" flex flex-row py-5 px-5 sm:px-20 py-40">
-      <Image
-          src={"/images/olympicslogo.png"}
-          width={50}
-          height={30}
-        />
-    </div>
-    <div class=" flex flex-col py-20 gap-10 sm py-40">
+    
+      <div class="flex flex-row px-5 py-2 sm:(mx-20 my-10) h-300 fixed backdrop-filter backdrop-brightness-100 w-[calc(100%_-_10rem)] top-5 left-1/2 transform -translate-x-1/2  backdrop-filter	backdrop-blur bg-gray-100		justify-self-start rounded-full py-2 px-2">
+          <Image class="blur-none"
+            src={"/images/olympicslogo.png"}
+            width={50}
+            height={30}
+          />
+      </div>
+    
+    <div class=" flex flex-col py-40 gap-10 sm:py-30">
     
     <div class="px-10 sm:px-40">
       <h3 class="text-3xl	pb-5">Emir Olympics</h3>
@@ -63,7 +65,7 @@ export default function Home(props) {
         <p class="text-gray-400 group-hover:text-black text-sm mb-4">We'll go back to the Yard for lunch at the courtyard.</p>
         <p class="text-white group-hover:text-black text-md">60 minutes</p>
       </div>
-      <div class="group bg-stone-950 hover:bg-yellow-300 rounded-[20px] py-10 px-10 w-full sm:w-auto flex flex-col transform transition duration-300 hover:-translate-y-1" style={{minWidth:370}}>
+      <div class="group bg-stone-950 hover:bg-yellow-300 rounded-[20px] py-10 px-10 w-full sm:w-auto flex flex-col transform transition duration-300 hover:-translate-y-1 mr-4" style={{minWidth:370}}>
         <h1 class="text-white group-hover:text-black text-3xl mb-10">Beach Volleyball 🏐 🏖</h1>
         <p class="text-gray-400 group-hover:text-black text-sm mb-4">Will be played with 4 players on each team. Ends when a team reaches 31 points</p>
         <p class="text-white group-hover:text-black text-md">60 minutes</p>
